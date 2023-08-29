@@ -8,8 +8,9 @@ export default function LandingPage() {
             <img className='gif-img' src={gif}/>
           </span>
         </h1>
-      
-        <h2>Welcome to my portfolio page, my name is Benas and I am a front-end web developer</h2>
+        <h2 className='h2-greet'>Welcome to my portfolio page, my name is Benas and I am a front-end web developer</h2>
+        <div className='line-break'></div>
+        
     </div>
   )
 }
