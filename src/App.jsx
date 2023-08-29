@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
+    <div className='app-container'>
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />

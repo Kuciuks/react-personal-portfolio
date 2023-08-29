@@ -1,5 +1,28 @@
 .header-container{
+    background-color: #16181D;
+    max-height: 100px;
+    height: 50px;
+}
+
+.nav-div{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #F6F7F9;
+    margin: 0 15px;
+    border: 2px solid #F6F7F9;
+    padding: 5px;
+    transition: .5s;
+    border-radius: 3px;
+}
+
+a:hover{
+    color:#16181D;
+    border-color: orangered;
+    background-color: #F6F7F9;
 }
