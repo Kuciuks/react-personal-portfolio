@@ -3,21 +3,32 @@ import '../Styles/Header.css'
 import {Link} from 'react-router-dom'
 export default function Header() {
 
-  //const [headerVisible, setHeaderVisible] = useState()
-
   useEffect(()=>{
     const header = document.querySelector('.header-container')
-    const button = document.querySelector('.reveal-button')
+    const button = document.querySelector('.header-button')
 
     window.addEventListener("scroll" , () =>{
-      if (window.scrollY > 50){
-        header.classList.add("header-hidden");
-        button.classList.add("hide-button")
+      if (window.scrollY > 50){ //show button, hide header
+        header.classList.add("header-toggle")
+        button.classList.add("toggle-button")
       }
-      else{
-        header.classList.remove("header-hidden")
+      else{ //show header, hide button
+        header.classList.remove("header-toggle")
+        button.classList.remove("toggle-button")
       }
     })
+
+    button.addEventListener("mouseover", ()=>{
+      header.classList.remove("header-toggle")
+      button.classList.remove("toggle-button")
+    })
+
+    header.addEventListener("mouseleave", ()=>{
+      header.classList.add("header-toggle")
+      button.classList.add("toggle-button")
+    })
+
+
 
   },[])
 
@@ -31,7 +42,7 @@ export default function Header() {
           <Link to='/contact'>Contact</Link>
           <Link to='/'>Landing Page</Link>
       </nav>
-      <button className='reveal-button'></button>
+      <button className='header-button'></button>
     </div>
   )
 }
