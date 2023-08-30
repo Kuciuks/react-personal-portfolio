@@ -3,31 +3,26 @@ import '../Styles/Header.css'
 import {Link} from 'react-router-dom'
 export default function Header() {
 
+
   useEffect(()=>{
     const header = document.querySelector('.header-container')
     const button = document.querySelector('.header-button')
 
     window.addEventListener("scroll" , () =>{
-      if (window.scrollY > 50){ //show button, hide header
-        header.classList.add("header-toggle")
-        button.classList.add("toggle-button")
+      if (window.scrollY > 50){
+        header.classList.add("header-toggle") // hide header
+        button.classList.add("toggle-button") // show button
       }
-      else{ //show header, hide button
-        header.classList.remove("header-toggle")
-        button.classList.remove("toggle-button")
+      else{
+        header.classList.remove("header-toggle") // show header
+        button.classList.remove("toggle-button") // hide button
       }
     })
 
-    button.addEventListener("mouseover", ()=>{
-      header.classList.remove("header-toggle")
-      button.classList.remove("toggle-button")
+    button.addEventListener("mouseover",()=>{
+      header.classList.remove("header-toggle") // show header
+      button.classList.remove("toggle-button") // hide button
     })
-
-    header.addEventListener("mouseleave", ()=>{
-      header.classList.add("header-toggle")
-      button.classList.add("toggle-button")
-    })
-
 
 
   },[])
@@ -42,7 +37,7 @@ export default function Header() {
           <Link to='/contact'>Contact</Link>
           <Link to='/'>Landing Page</Link>
       </nav>
-      <button className='header-button'></button>
+      <button className='header-button'><div className='line-button'></div></button>
     </div>
   )
 }
