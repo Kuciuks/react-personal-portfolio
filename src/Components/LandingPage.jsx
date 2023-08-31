@@ -1,5 +1,4 @@
 import '../Styles/LandingPage.css'
-import gif from '../assets/giphy.gif'
 export default function LandingPage() {
   return (
     <div className='landing-container'>
