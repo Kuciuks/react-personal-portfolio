@@ -3,16 +3,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
 .h1-greet{
-    font-size: 20vw;
+    font-size: 10vw;
+    margin-top: 10%;
 }
 .h2-greet{
-    font-size: 4vw;
-    margin-bottom: 20px;
+    font-size: 2vw;
     text-align: center;
 }
 

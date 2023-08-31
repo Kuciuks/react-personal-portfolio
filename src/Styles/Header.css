@@ -1,8 +1,9 @@
 .header-container{
-    max-height: 100px;
-    height: 30px;
+    left: 50%;
+    translate: -50%;
     position: fixed;
-    width: 100%;
+    width: 80%;
+    height: 3vw;
     transition: transform 0.3s;
     z-index: 10;
 }
@@ -18,17 +19,18 @@
     height: 100%;
     background-color: #16181D;
     z-index: 10;
+    border-radius: 5px;
     position: relative;
 }
 
 a{
     text-decoration: none;
     color: #F6F7F9;
-    margin: 0 10px;
+    margin: 0px 2.8vw;
     padding:  0 5px;
     transition: .5s;
     border-radius: 3px;
-    font-size: 8px;
+    font-size: 1vw;
 }
 
 a:hover{
