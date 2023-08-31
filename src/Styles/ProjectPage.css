@@ -1,13 +1,19 @@
 .project-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .project-div{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 2px solid black;
+    border: 2px solid rgb(252, 252, 252);
+    min-width: 250px;
+    height: 250px;
+    
 }
 
 .description{
@@ -21,4 +27,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.animate1{
+    transform: translateX(-100px);
+}
+.animate2{
+    transform: translateX(100px);
+}
+.animate3{
+    transform: translateX(-100px);
+}
+.animate4{
+    transform: translateX(100px);
 }

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import '../Styles/Header.css'
 import {Link} from 'react-router-dom'
 export default function Header() {
@@ -19,7 +19,7 @@ export default function Header() {
       }
     })
 
-    button.addEventListener("mouseover",()=>{
+    button.addEventListener("mouseover, click",()=>{
       header.classList.remove("header-toggle") // show header
       button.classList.remove("toggle-button") // hide button
     })
