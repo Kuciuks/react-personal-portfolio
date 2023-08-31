@@ -2,7 +2,7 @@ import '../Styles/ProjectPage.css'
 export default function ProjectPage() {
   return (
     <div className='project-container'>
-            <div className='project-div animate1'>
+            <div className='project-div'>
                 <div className='description'>
                     <h2>Project name</h2>
                     <p>Short description</p>
@@ -12,7 +12,7 @@ export default function ProjectPage() {
                 </div>
             </div>
             
-            <div className='project-div animate2'>
+            <div className='project-div'>
                 <div className='description'>
                     <h2>Project name</h2>
                     <p>Short description</p>
@@ -22,7 +22,7 @@ export default function ProjectPage() {
                 </div>
             </div>
             
-            <div className='project-div animate3'>
+            <div className='project-div'>
                 <div className='description'>
                     <h2>Project name</h2>
                     <p>Short description</p>
@@ -32,7 +32,7 @@ export default function ProjectPage() {
                 </div>
             </div>
             
-            <div className='project-div animate4'>
+            <div className='project-div'>
                 <div className='description'>
                     <h2>Project name</h2>
                     <p>Short description</p>
